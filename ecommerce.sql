@@ -36,8 +36,8 @@ CREATE TABLE Customers(
 customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
 First_name varchar(100) not null,
 Last_name varchar(100) not null,
-Email decimal not null unique,
-Phone_number int ,
+Email VARCHAR(255) NOT NULL UNIQUE, -- Can support all characters for emails
+phone_number VARCHAR(15),  -- Changed to VARCHAR to support international phone numbers up to 15 characters
 Address varchar(255) 
  ); 
 
